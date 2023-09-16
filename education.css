@@ -1,0 +1,305 @@
+/* Basic Styles for the Page */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* Dummy Navbar Styles (Placeholder) */
+.navbar {
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+}
+
+.navbar ul {
+    list-style: none;
+    padding: 0;
+}
+
+.navbar ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+.navbar a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+}
+
+/* Main Section Container Styles */
+.main-container {
+    padding: 20px;
+}
+
+/* Placeholder Styles for Different Sections (Customize as Needed) */
+.header {
+    background-color: #f0f0f0;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+.featured-content {
+    background-color: #f9f9f9;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+/* Add styles for other sections here */
+
+/* Footer Styles (Placeholder) */
+.footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+}
+
+/* Header Section Styles */
+.header {
+    background-color: #4CAF50; /* Green background color, adjust as needed */
+    color: #fff; /* White text color */
+    padding: 40px; /* Add padding for spacing */
+    text-align: center; /* Center-align text and image */
+}
+
+.header h1 {
+    font-size: 36px; /* Adjust title font size */
+    margin-bottom: 10px; /* Add space below the title */
+}
+
+.header p {
+    font-size: 18px; /* Adjust subtitle font size */
+    margin-bottom: 20px; /* Add space below the subtitle */
+}
+
+.header img {
+    max-width: 100%; /* Ensure the image fits within the container */
+    height: auto; /* Maintain image aspect ratio */
+    display: block; /* Center the image horizontally */
+    margin: 0 auto; /* Center the image horizontally */
+}
+
+/* Section Menu Styles */
+/* Section Navigation Styles */
+.section-navigation {
+    margin-top: 20px; /* Add spacing below the previous section */
+}
+
+.section {
+    border: 1px solid #ddd; /* Add a border around each section */
+    margin-bottom: 20px; /* Add spacing between sections */
+}
+
+.section-header {
+    display: flex; /* Use flexbox for layout */
+    justify-content: space-between; /* Space elements evenly */
+    align-items: center; /* Center-align elements vertically */
+    padding: 10px 20px; /* Padding for spacing */
+    cursor: pointer; /* Use a pointer cursor for interaction */
+    background-color: #f9f9f9; /* Light background color */
+}
+
+.section-title {
+    font-weight: bold;
+}
+
+.progress-bar {
+    background-color: #ddd; /* Gray background color for progress bar */
+    height: 10px; /* Height of the progress bar */
+    border-radius: 5px; /* Rounded corners */
+    width: 10%; /* Width of the progress bar (adjust as needed) */
+    margin-right: 10px; /* Add spacing between progress bar and title */
+}
+
+.progress-fill {
+    height: 100%; /* 100% height of the progress bar */
+    background-color: #4CAF50; /* Green color for filled progress */
+    transition: width 0.5s; /* Smooth transition for width changes */
+}
+
+.article-list {
+    list-style: none; /* Remove list bullets */
+    padding: 0; /* Remove default padding */
+    display: none; /* Initially hide the article list */
+}
+
+.article {
+    padding: 10px 20px; /* Padding for spacing */
+    display: flex; /* Use flexbox for layout */
+    justify-content: space-between; /* Space elements evenly */
+    align-items: center; /* Center-align elements vertically */
+    background-color: #fff; /* White background color for articles */
+    border-bottom: 1px solid #ddd; /* Add a border between articles */
+    cursor: pointer; /* Use a pointer cursor for interaction */
+}
+
+.article:hover {
+    background-color: #f5f5f5; /* Light gray background on hover */
+}
+
+.article-title {
+    flex: 1; /* Allow the title to grow to take available space */
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+.article-status {
+    font-size: 20px; /* Adjust font size for checkmark */
+    color: #4CAF50;
+}
+/* Dropdown Symbol Styles */
+.dropdown-symbol {
+    width: 0;
+    height: 0;
+    border-left: 6px solid transparent; /* Create a triangular shape */
+    border-right: 6px solid transparent;
+    border-top: 6px solid #333; /* Adjust color as needed */
+    margin-right: 10px; /* Add spacing between symbol and section title */
+    transition: transform 0.2s; /* Smooth transition for rotation */
+}
+
+/* Rotate the symbol when the section is expanded */
+.section.none .dropdown-symbol {
+    transform: rotate(180deg);
+}
+
+/* Featured Content Section Styles */
+.featured-content {
+    background-color: #f9f9f9; /* Light background color */
+    padding: 20px; /* Padding for spacing */
+    display: flex; /* Use flexbox for layout */
+    justify-content: space-between; /* Space content evenly */
+    align-items: center; /* Center-align content vertically */
+}
+
+.featured-article {
+    flex: 1; /* Allow the article to grow to take available space */
+    padding: 20px; /* Padding for spacing within the article */
+    text-align: left; /* Align text to the left */
+}
+
+.featured-article h2 {
+    font-size: 24px; /* Title font size */
+}
+
+.featured-article p {
+    font-size: 16px; /* Content font size */
+    margin-bottom: 20px; /* Add space below the paragraph */
+}
+
+.read-more-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #4CAF50; /* Green button color */
+    color: #fff; /* White text color */
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.featured-image img {
+    max-width: 100%; /* Ensure the image fits within the container */
+    height: auto; /* Maintain image aspect ratio */
+}
+/* Progress Tracking and Certificates Section Styles */
+.progress-tracking {
+    padding: 20px; /* Padding for spacing */
+    text-align: center; /* Center-align content */
+}
+
+.progress-bar {
+    background-color: #ddd; /* Gray background for progress bar */
+    height: 20px; /* Height of the progress bar */
+    border-radius: 10px; /* Rounded corners */
+    overflow: hidden; /* Hide overflowing content */
+}
+
+.progress-fill {
+    height: 100%; /* 100% height of the progress bar */
+    background-color: #4CAF50; /* Green color for filled progress */
+    transition: width 0.5s; /* Smooth transition for width changes */
+}
+
+.get-certificate-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #4CAF50; /* Green button color */
+    color: #fff; /* White text color */
+    text-decoration: none;
+    font-weight: bold;
+    margin-top: 20px; /* Add spacing below the progress bar */
+    cursor: pointer;
+}
+
+.get-certificate-button:hover {
+    background-color: #45A049;
+}
+
+
+
+/* Progress Tracking and Certificates Section Styles */
+.progress-tracking {
+    margin-top: 20px; /* Add spacing below the previous section */
+}
+
+.section {
+    border: 1px solid #ddd; /* Add a border around each section */
+    margin-bottom: 20px; /* Add spacing between sections */
+}
+
+.section-header {
+    display: flex; /* Use flexbox for layout */
+    justify-content: space-between; /* Space elements evenly */
+    align-items: center; /* Center-align elements vertically */
+    padding: 10px 20px; /* Padding for spacing */
+    cursor: pointer; /* Use a pointer cursor for interaction */
+    background-color: #f9f9f9; /* Light background color */
+}
+
+.section-title {
+    font-weight: bold;
+}
+
+.progress-bar {
+    background-color: #ddd; /* Gray background color for progress bar */
+    height: 10px; /* Height of the progress bar */
+    border-radius: 5px; /* Rounded corners */
+    width: 20%; /* Width of the progress bar (adjust as needed) */
+    margin-right: 10px; /* Add spacing between progress bar and title */
+}
+
+.progress-fill {
+    height: 100%; /* 100% height of the progress bar */
+    background-color: #4CAF50; /* Green color for filled progress */
+    transition: width 0.5s; /* Smooth transition for width changes */
+}
+
+.article-list {
+    list-style: none; /* Remove list bullets */
+    padding: 0; /* Remove default padding */
+    display: none; /* Initially hide the article list */
+}
+
+.article {
+    padding: 10px 20px; /* Padding for spacing */
+    display: flex; /* Use flexbox for layout */
+    justify-content: space-between; /* Space elements evenly */
+    align-items: center; /* Center-align elements vertically */
+    background-color: #fff; /* White background color for articles */
+    border-bottom: 1px solid #ddd; /* Add a border between articles */
+    cursor: pointer; /* Use a pointer cursor for interaction */
+}
+
+.article:hover {
+    background-color: #f5f5f5; /* Light gray background on hover */
+}
+
+.article-title {
+    flex: 1; /* Allow the title to grow to take available space */
+}
+
+.article-status {
+    font-size: 20px; /* Adjust font size for checkmark */
+}
