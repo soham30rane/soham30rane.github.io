@@ -1,70 +1,178 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="education.css">
-        <title>Waste Management Education</title>
-    </head>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
 <body>
-    <!-- Dummy Navbar (Placeholder) -->
-    <nav class="navbar">
-        <!-- Add your actual navigation elements here when ready -->
-        <ul>
-            <li><a href="#">Home</a></li>
-            <li><a href="#">Dummy Navbar</a></li>
-            <li><a href="#">About</a></li>
-            <!-- Add more navigation items as needed -->
-        </ul>
-    </nav>
-
-    <!-- Main Section Container -->
-    <div class="main-container">
-        <!-- Header Section (Placeholder) -->
-        <div class="header">
-            <h1>Waste Management Education</h1>
-            <p>Learn How to Make a Positive Impact on the Environment</p>
-            <img src="environment-image.jpg" alt="Clean Environment">
+  <div class='wrapper'>
+    <div class="container">
+      <header id="home">
+        <nav class="navbar">
+          <h2 class='name'>Soham Rane</h2>
+          <ul class="navbar__ul">
+            <li class='link'><a href="#home">Home</a></li>
+            <li class='link'><a href="#about">About</a></li>
+            <li class='link'><a href="#education">Education</a></li>
+            <li class='link'><a href="#portfolio">Projects</a></li>
+            <li class='link'><a href="#skills">Skills</a></li>
+            <li class='link'><a href="#contact">Contact</a></li>
+            <li>
+              <!-- Dark Theme Toggle  -->
+              <button class='darkmode'><i class="fas fa-moon"></i></button>
+            </li>
+          </ul>
+        </nav>
+        <div class="header__container">
+          <img src="./images/profile.png" alt="profile-image">
+          <div class="header__text__container">
+            <p class="header__text">Hey there! I'm Soham Rane, a software developer hailing from Mumbai, currently pursuing my Btech at VJTI. </p>
+          </div>
         </div>
-
-    <!-- Progress Tracking and Certificates Section -->
-    <div class="progress-tracking" id="super-section">
-        <!-- Javascript will add the html here -->
+      </header>
     </div>
 
-
-        <!-- Featured Content Section (Placeholder) -->
-        <div class="featured-content">
-            <div class="featured-article">
-                <h2>Featured Article</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam aliquet justo sit amet arcu auctor, nec scelerisque nulla feugiat.</p>
-                <a href="#" class="read-more-button">Read More</a>
-            </div>
-
-            <div class="featured-image">
-                <img src="featured-image.jpg" alt="Featured Image">
-            </div>
+    <div class="divider"></div>
+    
+    <section class="about" id="about">
+      <div class="wrapper">
+        <div class="about__container">
+          <h2>About Me</h2>
+          <p>As a dedicated software developer and lifelong learner, I am constantly driven by my enthusiasm to explore and acquire new knowledge and skills. With a passion for crafting seamless digital experiences, I specialize in crafting dynamic and user-friendly web solutions. Let's collaborate and bring your ideas to life!</p>
+          <div class="social-icons">
+            <a href="https://github.com/soham30rane" target="_blank" class="social-icon"><i class="fab fa-github"></i></a>
+            <a href="https://www.linkedin.com/in/soham-rane-4a5261280/" target="_blank" class="social-icon"><i class="fab fa-linkedin"></i></a>
+          </div>
         </div>
+      </div>
+    </section>
+    
+  <div class="divider"></div>
 
-        <!-- Progress Tracking and Certificates Section -->
-        <div class="progress-tracking">
-            <div class="progress-bar" style="width: 100%;">
-                <div class="progress-fill" id="total-progress-fill" ></div> <!-- Adjust width for user's progress -->
-            </div>
-            <button href="#" class="get-certificate-button" id="get-certificate-btn">Get Your Certificate</button>
-        </div>
-
-        <!-- Interactive Elements (Placeholder) -->
-        <div class="interactive-elements">
-            <!-- Add interactive elements here -->
-        </div>
+<!-- HTML markup for the education section -->
+<section class="education" id="education">
+  <div class="wrapper">
+    <div class="education__container">
+      <h2>Education</h2>
+      <div class="education__item">
+        <h3>SSC</h3>
+        <p>IES Modern English School, 2021</p>
+      </div>
+      <div class="education__item">
+        <h3>HSC</h3>
+        <p>D.G Ruparel, 2023</p>
+      </div>
+      <div class="education__item">
+        <h3>Bachelor's Degree in Information Technology</h3>
+        <p>Veermata Jijabai Institute of Technology, 2027</p>
+      </div>
     </div>
+  </div>
+</section>
 
-    <!-- Footer Section (Placeholder) -->
-    <div class="footer">
-        <!-- Add footer content here -->
-    </div>
-
-    <script src="education.js" ></script>
+  
+    <main class="portfolio" id='portfolio'>
+      <h2 class='portfolio__header'>Projects</h2>
+      <div class="portfolio__container">
+        <article class='card'>
+          <img src='./images/library.png' alt="page">
+          <div class="text-container">
+            <h2>LIBRARY WEB APP</h2>
+            <p>Developed a comprehensive Library Management Web application that streamlined book issuing, tracking, and other related tasks, enhancing efficiency for the library manager.</p>
+          </div>
+        </article>
+  
+        <article class='card'>
+          <img id="bot_img" src='./images/bot.png' alt="page">
+          <div class="text-container">
+            <h2>DATA SCRAPING BOT</h2>
+            <p>Designed and implemented a specialized data scraping bot tailored for the IPL (Indian Premier League) to efficiently extract a diverse range of sports-related data.</p>
+          </div>
+        </article>
+  
+        <article class='card'>
+          <img src='./images/page.png' alt="app">
+          <div class="text-container">
+            <h2>TECHNOVANZA - EVENTS PAGE</h2>
+            <p>Developed and enhanced the Events page for Technovanza, the annual cultural fest of our college. Implemented intriguing interactive features using React, Framer Motion.</p>
+          </div>
+        </article>
+      </div>
+  
+      <section class='skills' id='skills'>
+        <h2>Skills</h2>
+        <article class="skills-container">
+          <div class="skills__item" data-aos='fade-up'>
+            <img src="https://cdn-icons-png.flaticon.com/512/1199/1199124.png" alt="JS">
+            <p>Javascript</p>
+          </div>
+  
+          <div class="skills__item" data-aos='fade-up'>
+            <img src="https://cdn-icons-png.flaticon.com/512/1051/1051277.png" alt="HTML5">
+            <p>HTML5</p>
+          </div>
+  
+          <div class="skills__item" data-aos='fade-up'>
+            <img src="https://cdn-icons-png.flaticon.com/512/732/732190.png" alt="css">
+            <p>CSS3</p>
+          </div>
+  
+          <div class="skills__item" data-aos='fade-up'>
+            <img src="https://cdn-icons-png.flaticon.com/512/25/25231.png" alt="Github">
+            <p>Github</p>
+          </div>
+          <div class="skills__item" data-aos="fade-up">
+            <img src="https://cdn-icons-png.flaticon.com/512/919/919851.png" alt="React">
+            <p>React</p>
+          </div>
+        
+          <div class="skills__item" data-aos="fade-up">
+            <img src="./images/mongodb.svg" alt="MongoDB">
+            <p>MongoDB</p>
+          </div>
+        
+          <div class="skills__item" data-aos="fade-up">
+            <img src="https://cdn-icons-png.flaticon.com/512/919/919825.png" alt="Node.js">
+            <p>Node.js</p>
+          </div>
+        
+          <div class="skills__item" data-aos="fade-up">
+            <img src="https://cdn-icons-png.flaticon.com/512/1822/1822899.png" alt="Python">
+            <p>Python</p>
+          </div>
+        </article>
+      </section>
+  
+      <footer>
+        <div class="wrapper">
+          <div class="footer__text-container" id='contact'>
+            <h2>Contact</h2>
+            <p>Lets connect if you want to collaborate...</p>
+          </div>
+          <div class="footer__text-container1">
+            <p><span class='phone'>Phone</span> <strong>+91 97570 54256</strong></p>
+            <p><span class='email'>Email</span> <strong><a href="mailto:ssrane_b23@it.vjti.ac.in">ssrane_b23@it.vjti.ac.in</a></strong></p>
+          </div>
+        </div>
+        <hr class='footer__nav-hr'>
+        <nav class="footer__nav">
+          <h2>Soham Rane</h2>
+          <ul class='footer__nav-links'>
+            <li><a href="#home">Home</a></li>
+            <li class='link'><a href="#about">About</a></li>
+            <li class='link'><a href="#education">Education</a></li>
+            <li><a href="#portfolio">Projects</a></li>
+            <li class='link'><a href="#skills">Skills</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+          <p class='to-top'><a href="#top"><strong>BACK TO TOP</strong></a></p>
+        </nav>
+      </footer>
+    </main>
+  </div>
+  <script src="index.js"></script>
 </body>
 </html>
